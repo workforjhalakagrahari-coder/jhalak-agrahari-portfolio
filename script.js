@@ -27,7 +27,7 @@
     progress.style.width = (max > 0 ? Math.max(0, Math.min(100, window.scrollY / max * 100)) : 0) + '%';
   };
   window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', () => { if (window.innerWidth > 800) closeMenu(); onScroll(); });
+  window.addEventListener('resize', () => { if (window.innerWidth > 950) closeMenu(); onScroll(); });
   onScroll();
   document.getElementById('year').textContent = new Date().getFullYear();
   function showToast(message) {

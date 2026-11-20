@@ -206,3 +206,14 @@ h2 em { font-style: normal; }
 @media (max-width: 800px) {
   .approach-grid { grid-template-columns: 1fr; }
 }
+.hero { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); }
+.hero-left { container-type: inline-size; }
+.hero h1 { font-size: clamp(2.4rem, 16cqi, 8rem); }
+@media (max-width: 950px) {
+  .desktop-nav { display: none; }
+  .menu-toggle { display: block; }
+}
+@media (max-width: 800px) {
+  .hero { grid-template-columns: minmax(0, 1fr); }
+  .hero h1 { font-size: clamp(2.4rem, 16cqi, 6rem); }
+}
